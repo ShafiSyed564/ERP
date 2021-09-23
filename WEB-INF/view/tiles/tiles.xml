@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+ 
+<tiles-definitions>  
+  
+   <!-- Template Definition -->
+   <definition name="template-def"
+       template="/WEB-INF/view/tiles/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/view/tiles/templates/header.jsp" />  
+      <!--  <put-attribute name="menu" value="/WEB-INF/view/tiles/templates/menu.jsp" />   -->
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/view/tiles/templates/footer.jsp" />  
+   </definition>  
+   
+    <!-- Customer -->
+   
+   <definition name="CustomerAdd" extends="template-def">  
+       <put-attribute name="title" value="Supplier" />  
+       <put-attribute name="body" value="/WEB-INF/view/CustomerAdd.jsp" />  
+   </definition> 
+   
+   <definition name="CustomerList" extends="template-def">  
+       <put-attribute name="title" value="Customer	" />  
+       <put-attribute name="body" value="/WEB-INF/view/CustomerList.jsp" />  
+   </definition> 
+   
+    <definition name="CustomerView" extends="template-def">  
+       <put-attribute name="title" value="View Customer" />  
+       <put-attribute name="body" value="/WEB-INF/view/CustomerView.jsp" />  
+   </definition>
+
+ <!-- Supplier List -->
+   <definition name="SupplierList" extends="template-def">  
+       <put-attribute name="title" value="Supplier" />  
+       <put-attribute name="body" value="/WEB-INF/view/SupplierList.jsp" />  
+   </definition>
+   
+    <definition name="ViewSupplier" extends="template-def">  
+       <put-attribute name="title" value="Supplier" />  
+       <put-attribute name="body" value="/WEB-INF/view/ViewSupplier.jsp" />  
+   </definition>    
+   
+   <definition name="AddSupplier" extends="template-def">  
+       <put-attribute name="title" value="Supplier" />  
+       <put-attribute name="body" value="/WEB-INF/view/AddSupplier.jsp" />  
+   </definition> 
+   
+   <!-- Raw Material -->
+    <definition name="MaterialAdd" extends="template-def">  
+       <put-attribute name="title" value="AddMaterial" />  
+       <put-attribute name="body" value="/WEB-INF/view/MaterialAdd.jsp" />  
+   </definition> 
+   
+   <definition name="MaterialList" extends="template-def">  
+       <put-attribute name="title" value="ListMaterial" />  
+       <put-attribute name="body" value="/WEB-INF/view/MaterialList.jsp" />  
+   </definition> 
+   
+    <definition name="MaterialView" extends="template-def">  
+       <put-attribute name="title" value="View Customer" />  
+       <put-attribute name="body" value="/WEB-INF/view/MaterialView.jsp" />  
+   </definition>
+   
+    <!-- Product -->
+    <definition name="ProductAdd" extends="template-def">  
+       <put-attribute name="title" value="AddMaterial" />  
+       <put-attribute name="body" value="/WEB-INF/view/ProductAdd.jsp" />  
+   </definition> 
+   
+   <definition name="ProductList" extends="template-def">  
+       <put-attribute name="title" value="ListMaterial" />  
+       <put-attribute name="body" value="/WEB-INF/view/ProductList.jsp" />  
+   </definition> 
+   
+    <definition name="ProductView" extends="template-def">  
+       <put-attribute name="title" value="View Customer" />  
+       <put-attribute name="body" value="/WEB-INF/view/ProductView.jsp" />  
+   </definition>
+   
+    <!-- Sale Order -->
+    <definition name="SalesOrderAdd" extends="template-def">  
+       <put-attribute name="title" value="SaleOrder" />  
+       <put-attribute name="body" value="/WEB-INF/view/SalesOrderAdd.jsp" />  
+   </definition> 
+   
+   <definition name="SalesOrderList" extends="template-def">  
+       <put-attribute name="title" value="SaleOrder" />  
+       <put-attribute name="body" value="/WEB-INF/view/SalesOrderList.jsp" />  
+   </definition> 
+   
+    <definition name="SalesOrderView" extends="template-def">  
+       <put-attribute name="title" value="SaleOrder" />  
+       <put-attribute name="body" value="/WEB-INF/view/SalesOrderView.jsp" />  
+   </definition>
+   
+    <!-- Work Order -->
+    <definition name="WorkOrderAdd" extends="template-def">  
+       <put-attribute name="title" value="WorkOrder" />  
+       <put-attribute name="body" value="/WEB-INF/view/WorkOrderAdd.jsp" />  
+   </definition> 
+   
+   <definition name="WorkOrderList" extends="template-def">  
+       <put-attribute name="title" value="WorkOrder" />  
+       <put-attribute name="body" value="/WEB-INF/view/WorkOrderList.jsp" />  
+   </definition> 
+   
+    <definition name="WorkOrderView" extends="template-def">  
+       <put-attribute name="title" value="WorkOrder" />  
+       <put-attribute name="body" value="/WEB-INF/view/WorkOrderView.jsp" />  
+   </definition>
+   
+  
+ 
+</tiles-definitions>
